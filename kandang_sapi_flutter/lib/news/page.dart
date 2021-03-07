@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:kadang_sapi_flutter/drawer.dart';
-import 'package:kadang_sapi_flutter/newsdetail.dart';
+import 'package:kadang_sapi_flutter/util/drawer.dart';
+import 'package:kadang_sapi_flutter/news/detail.dart';
 
 class NewsPage extends StatefulWidget {
   @override
@@ -12,8 +12,10 @@ class NewsPage extends StatefulWidget {
 
 class _NewsPageState extends State<NewsPage> {
   Future<List<Newsdata>> fetchNews() async {
+    print('fetching');
     var response =
-        await http.get("http://iwandepee.000webhostapp.com/news.php");
+        await http.get("http://allamcowsmoo.000webhostapp.com/news.php");
+    print('fetch done');
 
     if (response.statusCode == 200) {
       final items = jsonDecode(response.body).cast<Map<String, dynamic>>();

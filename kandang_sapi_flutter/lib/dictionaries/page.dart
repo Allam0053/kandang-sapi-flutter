@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:kadang_sapi_flutter/dictdetail.dart';
-import 'package:kadang_sapi_flutter/drawer.dart';
+import 'package:kadang_sapi_flutter/dictionaries/detail.dart';
+import 'package:kadang_sapi_flutter/util/drawer.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 
 class DictionaryPage extends StatelessWidget {
@@ -10,7 +10,7 @@ class DictionaryPage extends StatelessWidget {
 
   Future<List<Dictdata>> fetchDict() async {
     var response =
-        await http.get("http://iwandepee.000webhostapp.com/dictionaries.php");
+        await http.get("http://allamcowsmoo.000webhostapp.com/dictionaries.php");
 
     if (response.statusCode == 200) {
       final items = jsonDecode(response.body).cast<Map<String, dynamic>>();

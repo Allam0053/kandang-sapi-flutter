@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kadang_sapi_flutter/detail.dart';
-import 'package:kadang_sapi_flutter/dictdetail.dart';
-import 'package:kadang_sapi_flutter/dictionaries.dart';
-import 'package:kadang_sapi_flutter/gallery.dart';
-import 'package:kadang_sapi_flutter/news.dart';
-import 'package:kadang_sapi_flutter/newsdetail.dart';
-import 'package:kadang_sapi_flutter/signin.dart';
-import 'package:kadang_sapi_flutter/signup.dart';
+import 'package:kadang_sapi_flutter/dictionaries/page.dart';
+import 'package:kadang_sapi_flutter/gallery/page.dart';
+import 'package:kadang_sapi_flutter/news/page.dart';
+import 'package:kadang_sapi_flutter/auth/signin.dart';
+import 'package:kadang_sapi_flutter/auth/signup.dart';
 
 void main() {
   runApp(MyApp());

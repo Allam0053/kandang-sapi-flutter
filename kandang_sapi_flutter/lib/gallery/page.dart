@@ -3,13 +3,13 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import 'package:http/http.dart' as http;
-import 'package:kadang_sapi_flutter/detail.dart';
-import 'package:kadang_sapi_flutter/drawer.dart';
+import 'package:kadang_sapi_flutter/gallery/detail.dart';
+import 'package:kadang_sapi_flutter/util/drawer.dart';
 
 class GalleryPage extends StatelessWidget {
   Future<List<Cowsdata>> fetchCows() async {
     var response =
-        await http.get("http://iwandepee.000webhostapp.com/cows.php");
+        await http.get("http://allamcowsmoo.000webhostapp.com/cows.php");
 
     if (response.statusCode == 200) {
       final items = jsonDecode(response.body).cast<Map<String, dynamic>>();

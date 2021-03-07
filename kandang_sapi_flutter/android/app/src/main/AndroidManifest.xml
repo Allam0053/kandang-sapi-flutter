@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.iwandepe.kadang_sapi_flutter">
+    package="com.allam.kadang_sapi_flutter">
     <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="kadang_sapi_flutter"
