@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Color(0xFF39424B),
-        accentColor: Color(0xFF465461),
-        buttonColor: Color(0xFFFF893B),
+        primaryColor: Color(0xFF2A1B3D),
+        accentColor: Color(0xFF44318D),
+        buttonColor: Color(0xFFD83F87),
         textTheme: TextTheme(
           headline1: TextStyle(
             fontSize: 36.0,
