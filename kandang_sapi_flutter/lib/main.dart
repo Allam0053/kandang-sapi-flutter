@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kadang_sapi_flutter/dictionaries/page.dart';
 import 'package:kadang_sapi_flutter/gallery/page.dart';
 import 'package:kadang_sapi_flutter/news/page.dart';
-import 'package:kadang_sapi_flutter/auth/signin.dart';
-import 'package:kadang_sapi_flutter/auth/signup.dart';
+import 'package:kadang_sapi_flutter/auth/page.dart';
 
 void main() {
   runApp(MyApp());

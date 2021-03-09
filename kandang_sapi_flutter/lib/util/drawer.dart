@@ -15,35 +15,55 @@ class DrawerComponent extends StatelessWidget {
               child: Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(260),
-                  child: Image.asset('assets/img/logo/logo.png'),
+                  child: Image.asset('assets/img/logo/logo.jpg'),
                 ),
               ),
             ),
             SizedBox(height: 20),
             ListTile(
               title:
-                  Text('Berita', style: Theme.of(context).textTheme.headline5),
+                  Row(
+                    children: [
+                      Icon(Icons.library_books_sharp),
+                      Text('Berita', style: Theme.of(context).textTheme.headline5),
+                    ],
+                  ),
               onTap: () {
                 Navigator.pushNamed(context, '/');
               },
             ),
             ListTile(
-              title: Text('Kamus Ternak',
-                  style: Theme.of(context).textTheme.headline5),
+              title: Row(
+                children: [
+                  Icon(Icons.book_outlined),
+                  Text('Kamus Ternak',
+                      style: Theme.of(context).textTheme.headline5),
+                ],
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/dictionary');
               },
             ),
             ListTile(
-              title: Text('Galeri Sapi',
-                  style: Theme.of(context).textTheme.headline5),
+              title: Row(
+                children: [
+                  Icon(Icons.border_all_rounded),
+                  Text('Galeri Sapi',
+                      style: Theme.of(context).textTheme.headline5),
+                ],
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/gallery');
               },
             ),
             ListTile(
               title:
-                  Text('Sign in', style: Theme.of(context).textTheme.headline5),
+                  Row(
+                    children: [
+                      Icon(Icons.login),
+                      Text('Sign in', style: Theme.of(context).textTheme.headline5),
+                    ],
+                  ),
               onTap: () {
                 Navigator.pushNamed(context, '/signin');
               },
